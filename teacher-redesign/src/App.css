@@ -1,0 +1,311 @@
+:root {
+  --light-grey: #f2f2f2; 
+  --grey-blue: #304856;
+  --darker-grey-blue: #243745; 
+  --light-blue: #8DCFE7; 
+}
+
+body {
+  background-color: var(--light-grey);
+  font-family: "Avenir Next";
+  font-weight: 600; 
+}
+
+button {
+  font-family: "Avenir Next";
+  font-weight: 600; 
+  border: none; 
+  outline: none; 
+  border-radius: 3px;
+}
+
+.app {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #8bcfe8;
+  box-shadow: 0 0 16px rgb(0 0 0 / 16%);
+  display: block;
+  height: 86px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.header-center {
+  width: 1090px; 
+  height: 70px; 
+  position: relative; 
+  margin: 0 auto; 
+  text-align: left; 
+}
+
+.prepfactory {
+  color: white; 
+  font-size: 46px;
+  margin: 18px 0 0 0; 
+}
+
+.main-body {
+  padding-top: 110px; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: center;
+}
+
+.teacher-box {
+  background-color: var(--grey-blue);
+  border-radius: 10px;
+  box-shadow: 0 0 16px rgb(0 0 0 / 35%);
+  height: 570px;
+  overflow: hidden;
+  position: absolute;
+  transition: all .4s ease-in-out;
+  width: 1082px;
+  display: grid; 
+  grid-template-rows: 50px 470px 50px;
+  grid-template-columns: 870px 212px;
+}
+
+.teacher-main-header {
+  grid-row: 1 / 2; 
+  grid-column: 1 / 2;
+}
+
+.teacher-main-header-center {
+  width: 96%; 
+  height: 100%; 
+  margin: 0 auto; 
+  border-bottom: 1px solid var(--darker-grey-blue);
+  display: flex;
+  justify-content: space-between;
+}
+
+.teacher-main-header-left-div {
+  display: flex; 
+}
+
+.teacher-main-header-right-div {
+  display: flex; 
+  justify-content: space-between;
+  width: 18%; 
+}
+
+.teacher-main-header-text {
+  width: 200px;
+  color: white; 
+  font-size: 18px; 
+  margin: -3px 0 0 0 ; 
+  text-align: left;
+  display: inline-block; 
+}
+
+.circle {
+  border-radius: 50%; 
+  width: 36px; 
+  height: 36px; 
+  margin-top: 10px;
+  background-color: var(--darker-grey-blue);
+  display: inline-block; 
+}
+
+.teacher-main-header-dots {
+  margin-top: 40px; 
+  margin-left: 5px; 
+  position: absolute; 
+  width: 30px; 
+  display: flex; 
+  justify-content: space-between;
+}
+
+.dot {
+  border-radius: 50%; 
+  width: 5px; 
+  height: 5px; 
+  background-color: var(--light-blue);
+  display: inline-block; 
+}
+
+.dot-on {
+  background-color: yellow; 
+}
+
+.teacher-main-screen {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  background-color: transparent;
+}
+
+.teacher-side-bar {
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+  background-color: var(--darker-grey-blue);
+  display: flex; 
+  flex-direction: column;
+  padding: 5% 10%; 
+}
+
+.teacher-side-bar-spacer {
+  height: 34%; 
+}
+
+.teacher-side-bar-content {
+  height: 66%; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.teacher-side-video {
+  color: var(--darker-grey-blue);
+  background-color: var(--grey-blue);
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  height: 28%;
+  font-size: 12px; 
+  border-radius: 3px;
+}
+
+.teacher-side-comment-form {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  height: 34%; 
+}
+
+.teacher-side-comment-area {
+  width: 96%; 
+  height: 72%; 
+  margin: 0 auto; 
+  padding: 2%; 
+  color: var(--darker-grey-blue);
+  background-color: var(--grey-blue);
+  font-family: "Avenir Next";
+  font-size: 10px; 
+  border: none; 
+  outline: none; 
+  resize: none;
+  border-radius: 3px;
+}
+
+.teacher-side-comment-button {
+  width: 60px; 
+  margin: 0 auto;
+  padding: 2px; 
+  font-size: 10px; 
+  background-color: var(--grey-blue);
+  color: var(--darker-grey-blue);
+}
+
+.teacher-side-credentials {
+  color: var(--grey-blue);
+  font-size: 12px; 
+  text-align: left; 
+}
+
+.teacher-side-how {
+  height: 30px; 
+  background-color: var(--grey-blue);
+  color: var(--darker-grey-blue);
+}
+
+.side-bar-circle {
+  position: absolute; 
+  background-color: var(--light-blue);
+  right: 0; 
+  margin: 0 20px 0 0; 
+}
+
+.teacher-footer {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  background-color: var(--darker-grey-blue);
+}
+
+.teacher-footer-center {
+  display: flex; 
+  justify-content: space-between;
+  padding: 0 10%; 
+  height: 100%; 
+}
+
+.footer-text {
+  color: var(--light-blue);
+  font-size: 16px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-text-on {
+  color: white; 
+  font-size: 20px; 
+}
+
+.right-arrow {
+  color: var(--grey-blue);
+  font-size: 30px; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-arrow-on {
+  color: yellow; 
+  font-size: 40px; 
+}
+
+@media screen and (max-width: 1082px) {
+  .teacher-box {
+    height: 700px; 
+    width: 100vw;
+    display: grid; 
+    grid-template-rows: 50px 470px 50px 100px;
+    grid-template-columns: 100%;
+  }
+
+  .teacher-side-bar {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    padding: 2% 10%; 
+    border-top: 1px solid var(--grey-blue);
+    height: 96%; 
+  }
+  
+  .teacher-side-bar-spacer {
+    height: 0%; 
+    width: 0%; 
+  }
+
+  .teacher-side-bar-content {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .teacher-side-video {
+    height: 80%;
+    padding: 2%;
+  }
+  
+  .teacher-side-comment-form {
+    height: 100%; 
+  }
+  
+  .teacher-side-comment-area {
+    width: 96%; 
+    height: 72%; 
+  }
+  
+  .side-bar-circle {
+    position: absolute; 
+    background-color: var(--light-blue);
+    right: auto; 
+    margin: 0 0 0 100px; 
+  }
+  
+}
